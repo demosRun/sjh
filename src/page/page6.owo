@@ -24,10 +24,13 @@
     option(value ="volvo") 测试
   img.so.so-b-0(src="@|591.png|")
   //- 确认按钮
-  img.queren(src="@|queren.png|")
+  img.queren(src="@|queren.png|" o-tap="queding")
 </template>
 <script>
 module.exports = {
+  queding: function () {
+    owo.go('page7//scaleDown/scaleUpDown')
+  }
 }
 </script>
 <style lang="less">

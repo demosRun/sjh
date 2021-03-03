@@ -10,6 +10,9 @@
 <script>
   module.exports = {
     created: function () {
+      owo.animate('fadeIn', this.query('.so-3'))
+      owo.animate('fadeIn', this.query('.so-2'), 800)
+      owo.animate('fadeInDown', this.query('.so-1'), 2000)
       setTimeout(() => {
         owo.go('page2//scaleDown/scaleUpDown')
       }, 4000);

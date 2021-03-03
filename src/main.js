@@ -17,3 +17,20 @@ setTimeout(() => {
     box: '.scale-box'
   })
 }, 100);
+
+var dianzan = 5162
+$.ajax({
+  type: 'get',
+  url: 'http://h5.people.com.cn/interface/zan/index',
+  cache: false,
+  dataType: 'jsonp',
+  jsonp: 'callback',
+  jsonpCallback: 'IndexForum',
+  async: false,
+  success: function success(data) {
+    console.log(data)
+  },
+  error: function error(e) {
+    console.log(e)
+  }
+});

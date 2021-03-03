@@ -6,9 +6,32 @@
     img.so.so-3(src="@|497.png|" go="page6//scaleDown/scaleUpDown")
     img.so.so-4(src="@|488.png|")
     img.so.so-5(src="@|479.png|" go="page4//scaleDown/scaleUpDown")
+    canvas#canvas(width="626" height="1300")
+    img.show(src="")
 </template>
 <script>
 module.exports = {
+  show: function () {
+    setTimeout(() => {
+      // 绘制canvas
+      var canvas = oCanvas.create({
+        canvas: "#canvas"
+      });
+      console.log(this.query('.so-1').src)
+      canvas.addChild(canvas.display.image({
+        x: 0,
+        y: 0,
+        width: 626,
+        height: 1094,
+        // origin: { x: "center", y: "center" },
+        image: '@|686.png|'
+      }))
+      setTimeout(() => {
+        document.querySelector('.show').src = canvas.canvasElement.toDataURL("image/png")
+      }, 500);
+    }, 800);
+    
+  }
 }
 </script>
 <style lang="less">
@@ -23,9 +46,13 @@ module.exports = {
   z-index: 0;;
 }
 .so-1 {
-  left: 0px;
-  top: 0px;
-  z-index: -1;
+  top: 160px;
+  z-index: 2;
+  width: 540px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 943px;
 }
 .so-2 {
   left: 85px;
@@ -47,5 +74,9 @@ module.exports = {
   top: 1226px;
   z-index: -5;
 }
-
+canvas {
+  display: none;
+  width: 626px;
+  height: 1300px;
+}
 </style>

@@ -82,6 +82,10 @@
 			"src": "https://cunchu.site/owo/plug/autoScale.js"
 		},
 		{
+			"name": "ocanvas-2.10.0.min",
+			"src": "./src/ocanvas-2.10.0.min.js"
+		},
+		{
 			"name": "swiper.4.5.0",
 			"src": "./src/resource/swiper.4.5.0.min.js"
 		},
@@ -136,6 +140,11 @@
 		{
 			"name": "page6",
 			"src": "/src/page/page6.owo",
+			"type": "page"
+		},
+		{
+			"name": "page7",
+			"src": "/src/page/page7.owo",
 			"type": "page"
 		}
 	],

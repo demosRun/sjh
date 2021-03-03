@@ -7,6 +7,7 @@
 <script>
 module.exports = {
   show: function () {
+    owo.animate('fadeInUp', this.query('.so-1'), 2000)
     setTimeout(() => {
       owo.go('page3//scaleDown/scaleUpDown')
     }, 4000);

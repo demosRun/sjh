@@ -1,224 +1,192 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
-<head>
-  <!-- 页面的元信息 -->
-  <title>{TAG_14226_TAG}</title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-  <meta name="format-detection" content="telephone=no, email=no" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
-  <meta name="renderer" content="webkit" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="filetype" content="1" />
-  <meta name="publishedtype" content="1" />
-  <meta name="pagetype" content="2" />
-  <meta name="screen-orientation" content="landscape" />
-  <meta name="x5-orientation" content="landscape" />
-  <meta name="full-screen" content="yes" />
-  <meta name="x5-fullscreen" content="true" />
-  <meta name="browsermode" content="application" />
-  <meta name="x5-page-mode" content="app" />
-
-  <!-- 页面主样式文件 -->
-  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.css">
-
-  <!-- 附属css文件 -->
-  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-  <link rel="stylesheet" href="./static/css/swiper.4.5.0.css" charset="utf-8">
-
-</head>
-
-<body>
-  <div class="scale-box">
+  <head>
+    <!-- 页面的元信息 -->
+    <title>{TAG_14226_TAG}</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="filetype" content="1"/>
+    <meta name="publishedtype" content="1"/>
+    <meta name="pagetype" content="2"/>
+    <meta name="screen-orientation" content="landscape"/>
+    <meta name="x5-orientation" content="landscape"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="browsermode" content="application"/>
+    <meta name="x5-page-mode" content="app"/>
+    
+      <!-- 页面主样式文件 -->
+      <link charset="utf-8"  rel="stylesheet" href="./static/css/owo.core.css">
+      
+    <!-- 附属css文件 -->
+    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+    <link rel="stylesheet" href="./static/css/swiper.4.5.0.css" charset="utf-8">
+      
+  </head>
+  <body>
+    <div class="scale-box">
     <!-- 页面[loading]-->
-    <div class="loading-box page" template="loading" style="display: none;">
-      <img class="loading" src="https://cunchu.site/ozzx/resource/loadingLogo.png">
-      <div class="loading-bar">
-        <div class="num-bar"></div>
-      </div>
-      <span class="text">Loading</span>
-      <div class="num">0%</div>
-    </div>
+    <div class="loading-box page" template="loading" style="display: none;"><img class="loading" src="./static/resource/loading.png"><div class="loading-bar"><div class="num-bar"></div></div><span class="text">Loading</span><div class="num">0%</div></div>
     <!-- 页面[page1]-->
-    <div class="page-1 page" template="page1" style="display: none;">
-      <div class="so so-0">
-        <img class="so so-1" src="./static/resource/363.png">
-        <img class="so so-2" src="./static/resource/748.png">
-        <img class="so so-3" src="./static/resource/82.png">
-        <img class="so so-4" src="./static/resource/210.png">
-      </div>
-    </div>
+    <div class="page-1 page" template="page1" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/363.png"><img class="so so-2" src="./static/resource/748.png"><img class="so so-3" src="./static/resource/82.png"><img class="so so-4" src="./static/resource/210.png"></div></div>
     <!-- 页面[page2]-->
-    <div class="page2 page" template="page2" style="display: none;">
-      <div class="so so-0">
-        <img class="so so-1" src="./static/resource/177.png">
-        <img class="so so-2" src="./static/resource/194.png">
-      </div>
-    </div>
+    <div class="page2 page" template="page2" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/177.png"><img class="so so-2" src="./static/resource/194.png"></div></div>
     <!-- 页面[page3]-->
-    <div class="page3 page" template="page3" style="display: none;">
-      <div class="so so-0">
-        <img class="so so-1" src="./static/resource/254.png" o-animation="shrink" go="page4//scaleDown/scaleUpDown">
-        <img class="so so-2" src="./static/resource/246.png" o-animation="flicker">
-        <img class="so so-3" src="./static/resource/202.png">
-        <img class="so so-4" src="./static/resource/449.png">
-        <img class="so so-5" src="./static/resource/242.png">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">浙江省委书记</div>
-            <div class="swiper-slide">河北省委书记</div>
-            <div class="swiper-slide">福建省委书记</div>
-            <div class="swiper-slide">江西省省长</div>
-            <div class="swiper-slide">浙江省委书记</div>
-            <div class="swiper-slide">河北省委书记</div>
-            <div class="swiper-slide">福建省委书记</div>
-            <div class="swiper-slide">江西省省长</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="page3 page" template="page3" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/254.png" o-animation="shrink" o-tap="next"><img class="so so-2" src="./static/resource/246.png" o-animation="flicker"><img class="so so-3" src="./static/resource/202.png"><img class="so so-4" src="./static/resource/449.png"><img class="so so-5" src="./static/resource/242.png"><div class="swiper-container"><div class="swiper-wrapper"></div></div></div></div>
     <!-- 页面[page4]-->
-    <div class="page4 page" template="page4" style="display: none;">
-      <div class="so so-0">
-        <img class="so so-5" src="./static/resource/242.png">
-        <img class="user-show" src="./static/resource/people.png">
-        <img class="back" src="./static/resource/back.png" go="page3//scaleDown/scaleUpDown">
-        <img class="created" src="./static/resource/created.png" o-animation="shrink" go="page5//scaleDown/scaleUpDown">
-        <div class="people-text">
-          <h4>人民网各位网友朋友：</h4>
-          <p>  大家好！</p>
-          <p>  我们立足国情、积极探索、大胆创新，注重学习借鉴国外社会保障有益经验，成功建设了具有鲜明中国特色的社会保障体系。我们坚持发挥中国共产党领导和我国社会主义制度的政治优势，集中力量办大事，推动社会保障事业行稳致远；坚持人民至上，坚持共同富裕把增进民生福祉、促进社会公平作为发展社会保障事业的根本出发点和落脚点，使改革发展成果更多更公平惠及全体人民；坚持制度引领围绕全覆盖、保基本、多层次、可持续等目标加强社会保障体系建设；坚持与时俱进，用改革的办法和创新的思维解决发展中的问题，坚决破除体制机制障碍，推动社会保障事业不断前进；坚持实事求是，既尽力而为、又量力而行，把提高社会保障水平建立在经济和财力可持续增长的基础之上，不脱离实际、超越阶段。要坚持和发展这些成功经验，不断总结，不断前进</p>
-        </div>
-      </div>
-    </div>
+    <div class="page4 page" template="page4" style="display: none;"><div class="so so-0"><img class="so so-5" src="./static/resource/242.png"><img class="user-show" src="./static/resource/people.png"><img class="back" src="./static/resource/back.png" go="page3//scaleDown/scaleUpDown"><img class="created" src="./static/resource/created.png" o-animation="shrink" go="page5//scaleDown/scaleUpDown"><div class="people-text"><h4>人民网各位网友朋友：</h4><p>  大家好！</p><p>  我们立足国情、积极探索、大胆创新，注重学习借鉴国外社会保障有益经验，成功建设了具有鲜明中国特色的社会保障体系。我们坚持发挥中国共产党领导和我国社会主义制度的政治优势，集中力量办大事，推动社会保障事业行稳致远；坚持人民至上，坚持共同富裕把增进民生福祉、促进社会公平作为发展社会保障事业的根本出发点和落脚点，使改革发展成果更多更公平惠及全体人民；坚持制度引领围绕全覆盖、保基本、多层次、可持续等目标加强社会保障体系建设；坚持与时俱进，用改革的办法和创新的思维解决发展中的问题，坚决破除体制机制障碍，推动社会保障事业不断前进；坚持实事求是，既尽力而为、又量力而行，把提高社会保障水平建立在经济和财力可持续增长的基础之上，不脱离实际、超越阶段。要坚持和发展这些成功经验，不断总结，不断前进</p></div></div></div>
     <!-- 页面[page5]-->
-    <div class="page5 page" template="page5" style="display: none;">
-      <div class="so so-0">
-        <img class="so so-1" src="./static/resource/686.png">
-        <img class="so so-2" src="./static/resource/503.png">
-        <img class="so so-3" src="./static/resource/497.png" go="page6//scaleDown/scaleUpDown">
-        <img class="so so-4" src="./static/resource/488.png">
-        <img class="so so-5" src="./static/resource/479.png" go="page4//scaleDown/scaleUpDown">
-      </div>
-    </div>
+    <div class="page5 page" template="page5" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/686.png"><img class="so so-2" src="./static/resource/503.png"><img class="so so-3" src="./static/resource/497.png" go="page6//scaleDown/scaleUpDown"><img class="so so-4" src="./static/resource/488.png"><img class="so so-5" src="./static/resource/479.png" go="page4//scaleDown/scaleUpDown"><canvas id="canvas" width="626" height="1300"></canvas><img class="show" src=""></div></div>
     <!-- 页面[page6]-->
-    <div class="page6 page" template="page6" style="display: none;">
-      <img class="send-bg" src="./static/resource/sendbg.png">
-      <img class="so so-0" src="./static/resource/566.png">
-      <input class="so so-0">
-      <input class="so so-1">
-      <input class="so so-2">
-      <input class="so so-3">
-      <textarea class="so so-t-0"></textarea>
-      <textarea class="so so-t-1"></textarea>
-      <select class="so so-select-0">
-        <option value="volvo">测试</option>
-        <option value="volvo">测试</option>
-        <option value="volvo">测试</option>
-      </select>
-      <select class="so so-select-1">
-        <option value="volvo">测试</option>
-        <option value="volvo">测试</option>
-        <option value="volvo">测试</option>
-      </select>
-      <select class="so so-select-2">
-        <option value="volvo">测试</option>
-        <option value="volvo">测试</option>
-        <option value="volvo">测试</option>
-      </select>
-      <img class="so so-b-0" src="./static/resource/591.png">
-      <img class="queren" src="./static/resource/queren.png">
-    </div>
-  </div>
+    <div class="page6 page" template="page6" style="display: none;"><img class="send-bg" src="./static/resource/sendbg.png"><img class="so so-0" src="./static/resource/566.png"><input class="so so-0"><input class="so so-1"><input class="so so-2"><input class="so so-3"><textarea class="so so-t-0"></textarea><textarea class="so so-t-1"></textarea><select class="so so-select-0"><option value="volvo">测试</option><option value="volvo">测试</option><option value="volvo">测试</option></select><select class="so so-select-1"><option value="volvo">测试</option><option value="volvo">测试</option><option value="volvo">测试</option></select><select class="so so-select-2"><option value="volvo">测试</option><option value="volvo">测试</option><option value="volvo">测试</option></select><img class="so so-b-0" src="./static/resource/591.png"><img class="queren" src="./static/resource/queren.png" o-tap="queding"></div>
+    <!-- 页面[page7]-->
+    <div class="page7 page" template="page7" style="display: none;"></div></div>
+    
+<!-- 框架script文件 -->
+<script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+// 模块 page3 的script代码
+var editData = [['浙江省委书记', './static/resource/people.png', '<h4>人民网各位网友朋友：</h4><p>&emsp;&emsp;大家好！</p><p>&emsp;&emsp;我们立足国情、积极探索、大胆创新，注重学习借鉴国外社会保障有益经验，成功建设了具有鲜明中国特色的社会保障体系。我们坚持发挥中国共产党领导和我国社会主义制度的政治优势，集中力量办大事，推动社会保障事业行稳致远；坚持人民至上，坚持共同富裕把增进民生福祉、促进社会公平作为发展社会保障事业的根本出发点和落脚点，使改革发展成果更多更公平惠及全体人民；坚持制度引领围绕全覆盖、保基本、多层次、可持续等目标加强社会保障体系建设；坚持与时俱进，用改革的办法和创新的思维解决发展中的问题，坚决破除体制机制障碍，推动社会保障事业不断前进；坚持实事求是，既尽力而为、又量力而行，把提高社会保障水平建立在经济和财力可持续增长的基础之上，不脱离实际、超越阶段。要坚持和发展这些成功经验，不断总结，不断前进</p>', './static/resource/686.png'], ['河北省委书记', './static/resource/people.png', '<h4>人民网各位网友朋友：</h4><p>&emsp;&emsp;大家好！</p><p>&emsp;&emsp;我们立足国情、积极探索、大胆创新，注重学习借鉴国外社会保障有益经验，成功建设了具有鲜明中国特色的社会保障体系。我们坚持发挥中国共产党领导和我国社会主义制度的政治优势，集中力量办大事，推动社会保障事业行稳致远；坚持人民至上，坚持共同富裕把增进民生福祉、促进社会公平作为发展社会保障事业的根本出发点和落脚点，使改革发展成果更多更公平惠及全体人民；坚持制度引领围绕全覆盖、保基本、多层次、可持续等目标加强社会保障体系建设；坚持与时俱进，用改革的办法和创新的思维解决发展中的问题，坚决破除体制机制障碍，推动社会保障事业不断前进；坚持实事求是，既尽力而为、又量力而行，把提高社会保障水平建立在经济和财力可持续增长的基础之上，不脱离实际、超越阶段。要坚持和发展这些成功经验，不断总结，不断前进</p>', './static/resource/686.png'], ['福建省委书记', './static/resource/people.png', '<h4>人民网各位网友朋友：</h4><p>&emsp;&emsp;大家好！</p><p>&emsp;&emsp;我们立足国情、积极探索、大胆创新，注重学习借鉴国外社会保障有益经验，成功建设了具有鲜明中国特色的社会保障体系。我们坚持发挥中国共产党领导和我国社会主义制度的政治优势，集中力量办大事，推动社会保障事业行稳致远；坚持人民至上，坚持共同富裕把增进民生福祉、促进社会公平作为发展社会保障事业的根本出发点和落脚点，使改革发展成果更多更公平惠及全体人民；坚持制度引领围绕全覆盖、保基本、多层次、可持续等目标加强社会保障体系建设；坚持与时俱进，用改革的办法和创新的思维解决发展中的问题，坚决破除体制机制障碍，推动社会保障事业不断前进；坚持实事求是，既尽力而为、又量力而行，把提高社会保障水平建立在经济和财力可持续增长的基础之上，不脱离实际、超越阶段。要坚持和发展这些成功经验，不断总结，不断前进</p>', './static/resource/686.png'], ['江西省省长', './static/resource/people.png', '<h4>人民网各位网友朋友：</h4><p>&emsp;&emsp;大家好！</p><p>&emsp;&emsp;我们立足国情、积极探索、大胆创新，注重学习借鉴国外社会保障有益经验，成功建设了具有鲜明中国特色的社会保障体系。我们坚持发挥中国共产党领导和我国社会主义制度的政治优势，集中力量办大事，推动社会保障事业行稳致远；坚持人民至上，坚持共同富裕把增进民生福祉、促进社会公平作为发展社会保障事业的根本出发点和落脚点，使改革发展成果更多更公平惠及全体人民；坚持制度引领围绕全覆盖、保基本、多层次、可持续等目标加强社会保障体系建设；坚持与时俱进，用改革的办法和创新的思维解决发展中的问题，坚决破除体制机制障碍，推动社会保障事业不断前进；坚持实事求是，既尽力而为、又量力而行，把提高社会保障水平建立在经济和财力可持续增长的基础之上，不脱离实际、超越阶段。要坚持和发展这些成功经验，不断总结，不断前进</p>', './static/resource/686.png'], ['浙江省委书记', './static/resource/people.png', '<h4>人民网各位网友朋友：</h4><p>&emsp;&emsp;大家好！</p><p>&emsp;&emsp;我们立足国情、积极探索、大胆创新，注重学习借鉴国外社会保障有益经验，成功建设了具有鲜明中国特色的社会保障体系。我们坚持发挥中国共产党领导和我国社会主义制度的政治优势，集中力量办大事，推动社会保障事业行稳致远；坚持人民至上，坚持共同富裕把增进民生福祉、促进社会公平作为发展社会保障事业的根本出发点和落脚点，使改革发展成果更多更公平惠及全体人民；坚持制度引领围绕全覆盖、保基本、多层次、可持续等目标加强社会保障体系建设；坚持与时俱进，用改革的办法和创新的思维解决发展中的问题，坚决破除体制机制障碍，推动社会保障事业不断前进；坚持实事求是，既尽力而为、又量力而行，把提高社会保障水平建立在经济和财力可持续增长的基础之上，不脱离实际、超越阶段。要坚持和发展这些成功经验，不断总结，不断前进</p>', './static/resource/686.png'], ['河北省委书记', './static/resource/people.png', '<h4>人民网各位网友朋友：</h4><p>&emsp;&emsp;大家好！</p><p>&emsp;&emsp;我们立足国情、积极探索、大胆创新，注重学习借鉴国外社会保障有益经验，成功建设了具有鲜明中国特色的社会保障体系。我们坚持发挥中国共产党领导和我国社会主义制度的政治优势，集中力量办大事，推动社会保障事业行稳致远；坚持人民至上，坚持共同富裕把增进民生福祉、促进社会公平作为发展社会保障事业的根本出发点和落脚点，使改革发展成果更多更公平惠及全体人民；坚持制度引领围绕全覆盖、保基本、多层次、可持续等目标加强社会保障体系建设；坚持与时俱进，用改革的办法和创新的思维解决发展中的问题，坚决破除体制机制障碍，推动社会保障事业不断前进；坚持实事求是，既尽力而为、又量力而行，把提高社会保障水平建立在经济和财力可持续增长的基础之上，不脱离实际、超越阶段。要坚持和发展这些成功经验，不断总结，不断前进</p>', './static/resource/686.png'], ['福建省委书记', './static/resource/people.png', '<h4>人民网各位网友朋友：</h4><p>&emsp;&emsp;大家好！</p><p>&emsp;&emsp;我们立足国情、积极探索、大胆创新，注重学习借鉴国外社会保障有益经验，成功建设了具有鲜明中国特色的社会保障体系。我们坚持发挥中国共产党领导和我国社会主义制度的政治优势，集中力量办大事，推动社会保障事业行稳致远；坚持人民至上，坚持共同富裕把增进民生福祉、促进社会公平作为发展社会保障事业的根本出发点和落脚点，使改革发展成果更多更公平惠及全体人民；坚持制度引领围绕全覆盖、保基本、多层次、可持续等目标加强社会保障体系建设；坚持与时俱进，用改革的办法和创新的思维解决发展中的问题，坚决破除体制机制障碍，推动社会保障事业不断前进；坚持实事求是，既尽力而为、又量力而行，把提高社会保障水平建立在经济和财力可持续增长的基础之上，不脱离实际、超越阶段。要坚持和发展这些成功经验，不断总结，不断前进</p>', './static/resource/686.png'], ['江西省省长', './static/resource/people.png', '<h4>人民网各位网友朋友：</h4><p>&emsp;&emsp;大家好！</p><p>&emsp;&emsp;我们立足国情、积极探索、大胆创新，注重学习借鉴国外社会保障有益经验，成功建设了具有鲜明中国特色的社会保障体系。我们坚持发挥中国共产党领导和我国社会主义制度的政治优势，集中力量办大事，推动社会保障事业行稳致远；坚持人民至上，坚持共同富裕把增进民生福祉、促进社会公平作为发展社会保障事业的根本出发点和落脚点，使改革发展成果更多更公平惠及全体人民；坚持制度引领围绕全覆盖、保基本、多层次、可持续等目标加强社会保障体系建设；坚持与时俱进，用改革的办法和创新的思维解决发展中的问题，坚决破除体制机制障碍，推动社会保障事业不断前进；坚持实事求是，既尽力而为、又量力而行，把提高社会保障水平建立在经济和财力可持续增长的基础之上，不脱离实际、超越阶段。要坚持和发展这些成功经验，不断总结，不断前进</p>', './static/resource/686.png']];
+owo.script = {
+  "loading": {
+    "data": {
+      "imgList": [""]
+    },
+    "show": function show() {
+      var mum = owo.query('.num')[0];
+      var numBar = owo.query('.num-bar')[0];
+      this.preloadImages(this.data.imgList, function (e) {
+        setTimeout(function () {
+          owo.go('page1////true');
+        }, 500);
+      }, function (num) {
+        numBar.style.width = num + '%';
+        mum.innerHTML = num + '%';
+      });
+    },
+    "preloadImage": function preloadImage(src, successFn) {
+      var image = new Image();
+      image.src = src;
 
-  <!-- 框架script文件 -->
-  <script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
-  <script type="text/javascript" charset="UTF-8">
-    owo.script = {
-      "loading": {
-        "data": {
-          "imgList": [""]
-        },
-        "show": function show() {
-          var mum = owo.query('.num')[0];
-          var numBar = owo.query('.num-bar')[0];
-          this.preloadImages(this.data.imgList, function(e) {
-            setTimeout(function() {
-              owo.go('page1////true');
-            }, 500);
-          }, function(num) {
-            numBar.style.width = num + '%';
-            mum.innerHTML = num + '%';
+      image.onload = function () {
+        successFn && successFn(src);
+      };
+
+      image.onerror = function (error) {
+        successFn && successFn(src);
+      };
+    },
+    "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
+      var _this = this;
+
+      if (!Array.isArray(srcs)) {
+        console.log('第一个参数只能是一个数组');
+      } else {
+        var allCount = srcs.length;
+        var doneCount = 0;
+        srcs.forEach(function (srcItem) {
+          _this.preloadImage(srcItem, function () {
+            doneCount++;
+            progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+
+            if (doneCount === allCount) {
+              doneFn && doneFn();
+            }
           });
-        },
-        "preloadImage": function preloadImage(src, successFn) {
-          var image = new Image();
-          image.src = src;
+        });
+      }
+    }
+  },
+  "page1": {
+    "created": function created() {
+      owo.animate('fadeIn', this.query('.so-3'));
+      owo.animate('fadeIn', this.query('.so-2'), 800);
+      owo.animate('fadeInDown', this.query('.so-1'), 2000);
+      setTimeout(function () {
+        owo.go('page2//scaleDown/scaleUpDown');
+      }, 4000);
+    }
+  },
+  "page2": {
+    "show": function show() {
+      owo.animate('fadeInUp', this.query('.so-1'), 2000);
+      setTimeout(function () {
+        owo.go('page3//scaleDown/scaleUpDown');
+      }, 4000);
+    }
+  },
+  "page3": {
+    "data": {
+      "swiper": null
+    },
+    "created": function created() {
+      var _this2 = this;
 
-          image.onload = function() {
-            successFn && successFn(src);
-          };
+      var newHtml = '';
+      editData.forEach(function (element) {
+        newHtml += "<div class=\"swiper-slide\">" + element[0] + "</div>";
+      });
+      this.query('.swiper-wrapper').innerHTML = newHtml;
+      setTimeout(function () {
+        _this2.data.swiper = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          direction: 'vertical'
+        });
+      }, 0);
+    },
+    "next": function next() {
+      var activeIndex = this.data.swiper.activeIndex;
+      document.querySelector('.page4 .user-show').src = editData[activeIndex][1];
+      document.querySelector('.page4 .people-text').src = editData[activeIndex][2];
+      document.querySelector('.page5 .so-1').src = editData[activeIndex][3]; // console.log()
 
-          image.onerror = function(error) {
-            successFn && successFn(src);
-          };
-        },
-        "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
-          var _this = this;
+      owo.go('page4//scaleDown/scaleUpDown');
+    }
+  },
+  "page4": {},
+  "page5": {
+    "show": function show() {
+      var _this3 = this;
 
-          if (!Array.isArray(srcs)) {
-            console.log('第一个参数只能是一个数组');
-          } else {
-            var allCount = srcs.length;
-            var doneCount = 0;
-            srcs.forEach(function(srcItem) {
-              _this.preloadImage(srcItem, function() {
-                doneCount++;
-                progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+      setTimeout(function () {
+        // 绘制canvas
+        var canvas = oCanvas.create({
+          canvas: "#canvas"
+        });
+        console.log(_this3.query('.so-1').src);
+        canvas.addChild(canvas.display.image({
+          x: 0,
+          y: 0,
+          width: 626,
+          height: 1094,
+          // origin: { x: "center", y: "center" },
+          image: './static/resource/686.png'
+        }));
+        setTimeout(function () {
+          document.querySelector('.show').src = canvas.canvasElement.toDataURL("image/png");
+        }, 500);
+      }, 800);
+    }
+  },
+  "page6": {
+    "queding": function queding() {
+      owo.go('page7//scaleDown/scaleUpDown');
+    }
+  },
+  "page7": {}
+};
+</script>
 
-                if (doneCount === allCount) {
-                  doneFn && doneFn();
-                }
-              });
-            });
-          }
-        }
-      },
-      "page1": {
-        "created": function created() {
-          setTimeout(function() {
-            owo.go('page2//scaleDown/scaleUpDown');
-          }, 4000);
-        }
-      },
-      "page2": {
-        "show": function show() {
-          setTimeout(function() {
-            owo.go('page3//scaleDown/scaleUpDown');
-          }, 4000);
-        }
-      },
-      "page3": {
-        "created": function created() {
-          new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            direction: 'vertical'
-          });
-        }
-      },
-      "page4": {},
-      "page5": {},
-      "page6": {}
-    };
-  </script>
+    <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
+    <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript"  charset="UTF-8"></script>
+    <script src="./static/js/ocanvas-2.10.0.min.js" type="text/javascript"  charset="UTF-8"></script>
+    <script src="./static/js/swiper.4.5.0.js" type="text/javascript"  charset="UTF-8"></script>
+    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
 
-  <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
-  <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript" charset="UTF-8"></script>
-  <script src="./static/js/swiper.4.5.0.js" type="text/javascript" charset="UTF-8"></script>
-  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
-
-</body>
-
+  </body>
 </html>
