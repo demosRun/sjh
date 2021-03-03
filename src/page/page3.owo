@@ -1,0 +1,85 @@
+<template lang="pug">
+.page3
+  .so.so-0
+    img.so.so-1(src="@|254.png|" o-animation="shrink" go="page4//scaleDown/scaleUpDown")
+    img.so.so-2(src="@|246.png|" o-animation="flicker")
+    img.so.so-3(src="@|202.png|")
+    img.so.so-4(src="@|449.png|")
+    img.so.so-5(src="@|242.png|")
+    .swiper-container
+      .swiper-wrapper
+        .swiper-slide 浙江省委书记
+        .swiper-slide 河北省委书记
+        .swiper-slide 福建省委书记
+        .swiper-slide 江西省省长
+        .swiper-slide 浙江省委书记
+        .swiper-slide 河北省委书记
+        .swiper-slide 福建省委书记
+        .swiper-slide 江西省省长
+</template>
+<script>
+module.exports = {
+  created: function () {
+    new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      direction: 'vertical'
+    })
+  }
+}
+</script>
+<style lang="less">
+.so {
+  position: absolute;
+}
+.so-0 {
+  left: 2px;
+  top: 52px;
+  width: 750px;
+  height: 1369px;
+  z-index: 0;;
+}
+.so-1 {
+  left: 261px;
+  top: 1016px;
+  z-index: -1;
+}
+.so-2 {
+  left: 264px;
+  top: 957px;
+  z-index: -2;
+}
+.so-3 {
+  left: 359px;
+  top: 291px;
+  z-index: -3;
+}
+.so-4 {
+  left: 90px;
+  top: 156px;
+  z-index: -4;
+}
+.so-5 {
+  left: 0px;
+  top: 0px;
+  z-index: -5;
+}
+.swiper-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 440px;
+  margin: auto;
+  top: 460px;
+}
+.swiper-slide {
+  font-size: 28px;
+  text-align: center;
+  line-height: 158px;
+  color: #82694b;
+}
+.swiper-slide-next {
+  font-size: 46px;
+  font-weight: bold;
+}
+</style>

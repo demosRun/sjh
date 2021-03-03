@@ -1,0 +1,37 @@
+<template lang="pug">
+.page2
+  .so.so-0
+    img.so.so-1(src="@|177.png|")
+    img.so.so-2(src="@|194.png|")
+</template>
+<script>
+module.exports = {
+  show: function () {
+    setTimeout(() => {
+      owo.go('page3//scaleDown/scaleUpDown')
+    }, 4000);
+  }
+}
+</script>
+<style lang="less">
+.so {
+  position: absolute;
+}
+.so-0 {
+  left: 0px;
+  top: 189px;
+  width: 750px;
+  height: 1451px;
+  z-index: 0;;
+}
+.so-1 {
+  left: 0px;
+  top: 658px;
+  z-index: -1;
+}
+.so-2 {
+  left: 0px;
+  top: 0px;
+  z-index: -2;
+}
+</style>

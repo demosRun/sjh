@@ -1,0 +1,51 @@
+<template lang="pug">
+.page5
+  .so.so-0
+    img.so.so-1(src="@|686.png|")
+    img.so.so-2(src="@|503.png|")
+    img.so.so-3(src="@|497.png|" go="page6//scaleDown/scaleUpDown")
+    img.so.so-4(src="@|488.png|")
+    img.so.so-5(src="@|479.png|" go="page4//scaleDown/scaleUpDown")
+</template>
+<script>
+module.exports = {
+}
+</script>
+<style lang="less">
+.so {
+  position: absolute;
+}
+.so-0 {
+  left: 61px;
+  top: 38px;
+  width: 626px;
+  height: 1362px;
+  z-index: 0;;
+}
+.so-1 {
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.so-2 {
+  left: 85px;
+  top: 1132px;
+  z-index: -2;
+}
+.so-3 {
+  left: 432px;
+  top: 1226px;
+  z-index: -3;
+}
+.so-4 {
+  left: 5px;
+  top: 1226px;
+  z-index: -4;
+}
+.so-5 {
+  left: 219px;
+  top: 1226px;
+  z-index: -5;
+}
+
+</style>

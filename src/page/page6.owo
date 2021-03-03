@@ -1,0 +1,180 @@
+<template lang="pug">
+.page6
+  //- 背景
+  img.send-bg(src="@|sendbg.png|")
+  img.so.so-0(src="@|566.png|")
+  //- input
+  input.so.so-0
+  input.so.so-1
+  input.so.so-2
+  input.so.so-3
+  textarea.so.so-t-0
+  textarea.so.so-t-1
+  select.so.so-select-0
+    option(value ="volvo") 测试
+    option(value ="volvo") 测试
+    option(value ="volvo") 测试
+  select.so.so-select-1
+    option(value ="volvo") 测试
+    option(value ="volvo") 测试
+    option(value ="volvo") 测试
+  select.so.so-select-2
+    option(value ="volvo") 测试
+    option(value ="volvo") 测试
+    option(value ="volvo") 测试
+  img.so.so-b-0(src="@|591.png|")
+  //- 确认按钮
+  img.queren(src="@|queren.png|")
+</template>
+<script>
+module.exports = {
+}
+</script>
+<style lang="less">
+.so-0 {
+  left: 75px;
+  top: 493px;
+  width: 580px;
+  height: 65px;
+  z-index: 3;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 27px;
+  padding: 0 10px;
+  background-image: url('@|577.png|');
+}
+.so-1 {
+  left: 75px;
+  top: 946px;
+  width: 580px;
+  height: 60px;
+  z-index: 2;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 25px;
+  padding: 0 10px;
+  background-image: url('@|583.png|');
+}
+.so-2 {
+  left: 75px;
+  top: 1015px;
+  width: 580px;
+  height: 60px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 25px;
+  padding: 0 10px;
+  background-image: url('@|585.png|');
+}
+.so-3 {
+  left: 75px;
+  top: 1084px;
+  width: 345px;
+  height: 60px;
+  z-index: 0;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 25px;
+  padding: 0 10px;
+  background-image: url('@|588.png|');
+}
+.so-t-0 {
+  left: 75px;
+  top: 567px;
+  width: 580px;
+  height: 175px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  background-image: url('@|579.png|');
+}
+.so-t-1 {
+  left: 75px;
+  top: 822px;
+  width: 580px;
+  height: 95px;
+  z-index: 0;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  background-image: url('@|581.png|');
+}
+.so-select-0 {
+  left: 75px;
+  top: 271px;
+  width: 600px;
+  height: 65px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 27px;
+  padding: 0 10px;
+  background: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-image: url('@|select.png|');
+}
+.so-select-1 {
+  left: 75px;
+  top: 345px;
+  width: 600px;
+  height: 65px;
+  z-index: 0;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 27px;
+  padding: 0 10px;
+  background: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-image: url('@|select.png|');
+}
+.so-select-2 {
+  left: 75px;
+  top: 420px;
+  width: 600px;
+  height: 65px;
+  z-index: 0;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 27px;
+  padding: 0 10px;
+  background: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-image: url('@|select.png|');
+}
+.so-b-0 {
+  left: 454px;
+  top: 1084px;
+  z-index: 0;
+}
+.queren {
+  position: absolute;
+}
+.send-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.queren {
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 170px;
+  z-index: 9;
+}
+</style>
