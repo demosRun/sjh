@@ -14,7 +14,7 @@
       owo.animate('fadeIn', this.query('.so-2'), 800)
       owo.animate('fadeInDown', this.query('.so-1'), 2000)
       setTimeout(() => {
-        owo.go('page2//scaleDown/scaleUpDown')
+        owo.go('page2//scaleDown/scaleUpDown/true')
       }, 4000);
     }
   }
@@ -36,6 +36,7 @@
   left: 0px;
   top: 0px;
   z-index: -1;
+  animation-timing-function: ease;
 }
 .so-2 {
   left: 530px;

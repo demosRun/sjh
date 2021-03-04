@@ -4,8 +4,8 @@
     img.so.so-5(src="@|242.png|")
     //- 顶部自动生成的图
     img.user-show(src="@|people.png|")
-    img.back(src="@|back.png|" go="page3//scaleDown/scaleUpDown")
-    img.created(src="@|created.png|" o-animation="shrink" go="page5//scaleDown/scaleUpDown")
+    img.back(src="@|back.png|" go="page3//scaleDown/scaleUpDown/true")
+    img.created(src="@|created.png|" o-animation="shrink" go="page5//scaleDown/scaleUpDown/true")
     .people-text
       h4 人民网各位网友朋友：
       p &emsp;&emsp;大家好！

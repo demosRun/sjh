@@ -17,6 +17,7 @@ body, html {
 }
 body {
   background-image: url('../resource/bg.png');
+  opacity: 0;
 }
 html {
   background-color: white;
@@ -57,4 +58,34 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 .so {
   position: absolute;
+}
+
+.xiezuo {
+  position: absolute;
+  left: 160px;
+  top: 600px;
+}
+@keyframes biAni{
+  0%{
+      transform: rotate(0deg) translateX(-10vw) translateY(1vw);
+      opacity: 1;
+      }
+  100%{
+      transform: rotate(0deg) translateX(0vw) translateY(0vw);
+      opacity: 0.4;
+      }
+}
+
+.bi {
+  animation: biAni 3s infinite 0s linear;
+}
+
+.line-show {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 636px;
+  user-select: none;
+  pointer-events: none;
 }

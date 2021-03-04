@@ -11,7 +11,41 @@
   module.exports = {
     data: {
       imgList: [
-        ""
+        "@|loading-bg.jpg|",
+        "@|686.png|",
+        "@|363.png|",
+        "@|194.png|",
+        "@|242.png|",
+        "@|566.png|",
+        "@|210.png|",
+        "@|sendbg.png|",
+        "@|bg.png|",
+        "@|people.png|",
+        "@|82.png|",
+        "@|177.png|",
+        "@|661.png|",
+        "@|673.png|",
+        "@|449.png|",
+        "@|672.png|",
+        "@|loading.png|",
+        "@|202.png|",
+        "@|created.png|",
+        "@|488.png|",
+        "@|497.png|",
+        "@|254.png|",
+        "@|queren.png|",
+        "@|479.png|",
+        "@|back.png|",
+        "@|748.png|",
+        "@|591.png|",
+        "@|246.png|",
+        "@|579.png|",
+        "@|581.png|",
+        "@|select.png|",
+        "@|583.png|",
+        "@|585.png|",
+        "@|577.png|",
+        "@|588.png|",
       ]
     },
     show: function () {
@@ -20,7 +54,7 @@
       this.preloadImages(this.data.imgList, (e) => {
         setTimeout(() => {
           owo.go('page1////true')
-        }, 500)
+        }, 1000)
       }, (num) => {
         numBar.style.width = num + '%'
         mum.innerHTML = num + '%'

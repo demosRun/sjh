@@ -1,10 +1,44 @@
 <template lang="pug">
 .page7
-  
+  .so.so-0
+    img.so.so-1(src="@|673.png|")
+    img.so.so-2(src="@|672.png|")
+    img.so.so-3(src="@|661.png|")
+    img.so.so-4(src="@|242.png|")
 </template>
 <script>
 module.exports = {
+  created: function () {
+    owo.animate('flipInY', this.query('.so-3'), 800)
+  }
 }
 </script>
 <style lang="less">
+.so-0 {
+  left: 3px;
+  top: 52px;
+  width: 750px;
+  height: 1369px;
+  z-index: 0;;
+}
+.so-1 {
+  left: 390px;
+  top: 711px;
+  z-index: -1;
+}
+.so-2 {
+  left: 161px;
+  top: 711px;
+  z-index: -2;
+}
+.so-3 {
+  left: 124px;
+  top: 206px;
+  z-index: -3;
+}
+.so-4 {
+  left: 0px;
+  top: 0px;
+  z-index: -4;
+}
 </style>

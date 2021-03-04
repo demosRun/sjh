@@ -17,6 +17,7 @@ body, html {
 }
 body {
   background-image: url('@|bg.png|');
+  opacity: 0;
 }
 html {
   background-color: white;
@@ -57,4 +58,19 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 .so {
   position: absolute;
+}
+
+@keyframes show{
+  0% {
+    transform: rotate(0deg) translateY(-80vw);
+    opacity: 0.8;
+  }
+  100%{
+    transform: rotate(0deg) translateY(0);
+    opacity: 1;
+  }
+}
+
+.show-top {
+  animation: show 1.5s 1 1s ease;
 }

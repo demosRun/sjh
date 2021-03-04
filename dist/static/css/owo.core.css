@@ -154,6 +154,7 @@ li {
   width: 750px;
   height: 1451px;
   z-index: 0;
+  animation-timing-function: ease;
 }
 
 .page2 .so-1 {
@@ -332,7 +333,7 @@ li {
 }
 
 .page5 .so-1 {
-  top: 160px;
+  top: 135px;
   z-index: 2;
   width: 540px;
   left: 0;
@@ -342,7 +343,7 @@ li {
 }
 
 .page5 .so-2 {
-  left: 85px;
+  left: 52px;
   top: 1132px;
   z-index: -2;
 }
@@ -368,11 +369,31 @@ li {
 .page5 canvas {
   display: none;
   width: 626px;
-  height: 1300px;
+  height: 1200px;
+}
+
+.page5 .show {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  opacity: 0;
+}
+
+.page5 .dianzan-num {
+  color: #60482b;
+  font-size: 34px;
+  position: absolute;
+  top: 1099px;
+  left: 46px;
+  display: block;
+  width: 540px;
+  text-align: center;
+  font-weight: bold;
 }
 .page6 .so-0 {
   left: 75px;
-  top: 493px;
+  top: 567px;
   width: 580px;
   height: 65px;
   z-index: 3;
@@ -385,7 +406,7 @@ li {
 
 .page6 .so-1 {
   left: 75px;
-  top: 946px;
+  top: 966px;
   width: 580px;
   height: 60px;
   z-index: 2;
@@ -398,7 +419,7 @@ li {
 
 .page6 .so-2 {
   left: 75px;
-  top: 1015px;
+  top: 1034px;
   width: 580px;
   height: 60px;
   z-index: 1;
@@ -411,7 +432,7 @@ li {
 
 .page6 .so-3 {
   left: 75px;
-  top: 1084px;
+  top: 1107px;
   width: 345px;
   height: 60px;
   z-index: 0;
@@ -424,26 +445,28 @@ li {
 
 .page6 .so-t-0 {
   left: 75px;
-  top: 567px;
+  top: 640px;
   width: 580px;
   height: 175px;
   z-index: 1;
   background-repeat: no-repeat;
   border: none;
-  font-size: 20px;
+  font-size: 26px;
+  line-height: 35px;
   padding: 10px;
   background-image: url('../resource/579.png');
 }
 
 .page6 .so-t-1 {
   left: 75px;
-  top: 822px;
+  top: 843px;
   width: 580px;
   height: 95px;
   z-index: 0;
   background-repeat: no-repeat;
   border: none;
-  font-size: 20px;
+  font-size: 26px;
+  line-height: 35px;
   padding: 10px;
   background-image: url('../resource/581.png');
 }
@@ -499,9 +522,26 @@ li {
   background-image: url('../resource/select.png');
 }
 
+.page6 .so-select-3 {
+  left: 75px;
+  top: 493px;
+  width: 600px;
+  height: 65px;
+  z-index: 0;
+  background-repeat: no-repeat;
+  font-size: 27px;
+  padding: 0 10px;
+  background: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-image: url('../resource/select.png');
+}
+
 .page6 .so-b-0 {
   left: 454px;
-  top: 1084px;
+  top: 1107px;
   z-index: 0;
 }
 
@@ -525,7 +565,37 @@ li {
   bottom: 170px;
   z-index: 9;
 }
+.page7 .so-0 {
+  left: 3px;
+  top: 52px;
+  width: 750px;
+  height: 1369px;
+  z-index: 0;
+}
 
+.page7 .so-1 {
+  left: 390px;
+  top: 711px;
+  z-index: -1;
+}
+
+.page7 .so-2 {
+  left: 161px;
+  top: 711px;
+  z-index: -2;
+}
+
+.page7 .so-3 {
+  left: 124px;
+  top: 206px;
+  z-index: -3;
+}
+
+.page7 .so-4 {
+  left: 0px;
+  top: 0px;
+  z-index: -4;
+}
 /* 页面切换动画 */
 .o-page-scaleDown {
 	-webkit-animation: scaleDown .7s ease both;
@@ -556,6 +626,36 @@ li {
 }
 @keyframes scaleUpDown {
 	from { opacity: 0; transform: scale(1.2); }
+}
+.o-page-fade {
+	-webkit-animation: fade .7s ease both;
+	-moz-animation: fade .7s ease both;
+	animation: fade .7s ease both;
+}
+
+@-webkit-keyframes fade {
+	to { opacity: 0; }
+}
+@-moz-keyframes fade {
+	to { opacity: 0; }
+}
+@keyframes fade {
+	to { opacity: 0; }
+}
+.o-page-moveFromRight {
+	-webkit-animation: moveFromRight .6s ease both;
+	-moz-animation: moveFromRight .6s ease both;
+	animation: moveFromRight .6s ease both;
+}
+
+@-webkit-keyframes moveFromRight {
+	from { -webkit-transform: translateX(100%); }
+}
+@-moz-keyframes moveFromRight {
+	from { -moz-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+	from { transform: translateX(100%); }
 }
 
 /* 动画效果 */
@@ -603,5 +703,36 @@ li {
 
 .fadeInUp {
   animation-name: fadeInUp;
+}
+
+@keyframes flipInY {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInY {
+  backface-visibility: visible !important;
+  animation-name: flipInY;
 }
 

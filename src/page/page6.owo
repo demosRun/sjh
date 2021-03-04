@@ -4,39 +4,88 @@
   img.send-bg(src="@|sendbg.png|")
   img.so.so-0(src="@|566.png|")
   //- input
-  input.so.so-0
-  input.so.so-1
-  input.so.so-2
-  input.so.so-3
-  textarea.so.so-t-0
-  textarea.so.so-t-1
-  select.so.so-select-0
-    option(value ="volvo") 测试
-    option(value ="volvo") 测试
-    option(value ="volvo") 测试
-  select.so.so-select-1
-    option(value ="volvo") 测试
-    option(value ="volvo") 测试
-    option(value ="volvo") 测试
-  select.so.so-select-2
-    option(value ="volvo") 测试
-    option(value ="volvo") 测试
-    option(value ="volvo") 测试
-  img.so.so-b-0(src="@|591.png|")
+  input.so.so-0(placeholder="标题（20字内）" id="subject")
+  input.so.so-1(placeholder="真实姓名（必填）" id="username")
+  input.so.so-2(placeholder="联系电话（必填）" id="tel")
+  input.so.so-3(id="code" placeholder="验证码")
+  textarea.so.so-t-0(placeholder="留言（不少于20字）" id="mcontent")
+  textarea.so.so-t-1(id="hiddenRemark" placeholder="涉及您或他人的隐私，以及其他您认为不适合公开展示的信息，请填写在此框内")
+  select.so.so-select-0(placeholder="请选择省份" onchange="setProId(value)")
+    <option style="color: #b6b6b6" disabled="" selected="">选择省份</option>
+    <option value="4">北京市</option>
+    <option value="5">天津市</option>
+    <option value="6">河北省</option>
+    <option value="17">山西省</option>
+    <option value="18">内蒙古自治区</option>
+    <option value="8">辽宁省</option>
+    <option value="9">吉林省</option>
+    <option value="10">黑龙江省</option>
+    <option value="12">上海市</option>
+    <option value="13">江苏省</option>
+    <option value="14">浙江省</option>
+    <option value="19">安徽省</option>
+    <option value="20">福建省</option>
+    <option value="21">江西省</option>
+    <option value="22">山东省</option>
+    <option value="27">河南省</option>
+    <option value="28">湖北省</option>
+    <option value="29">湖南省</option>
+    <option value="30">广东省</option>
+    <option value="31">广西壮族自治区</option>
+    <option value="32">海南省</option>
+    <option value="33">重庆市</option>
+    <option value="34">四川省</option>
+    <option value="35">贵州省</option>
+    <option value="36">云南省</option>
+    <option value="37">西藏自治区</option>
+    <option value="41">陕西省</option>
+    <option value="42">甘肃省</option>
+    <option value="43">青海省</option>
+    <option value="44">宁夏回族自治区</option>
+    <option value="45">新疆维吾尔自治区</option>
+    <option value="38">香港特别行政区</option>
+    <option value="39">澳门特别行政区</option>
+  select.so.so-select-1(id="leader" onchange="setLeaderId(value)")
+    <option style="color: #b6b6b6" disabled="" selected="">请先选择省份</option>
+  select.so.so-select-2(placeholder="请选择话题" onchange="sethuati(value)")
+    <option style="color: #c70f11" disabled="" selected="">选择话题</option>
+    <option value="81">经济发展</option>
+    <option value="82">科技创新</option>
+    <option value="83">疫情防控</option>
+    <option value="84">基层治理</option>
+    <option value="85">营商环境</option>
+    <option value="86">巩固脱贫成果</option>
+    <option value="87">就业创业</option>
+    <option value="88">群众办事</option>
+    <option value="89">文化教育</option>
+    <option value="90">看病就医</option>
+    <option value="91">住房安居</option>
+    <option value="92">生态环保</option>
+    <option value="93">保障救助</option>
+    <option value="94">乡村振兴</option>
+    <option value="95">养老托幼</option>
+    <option value="96">交通运输</option>
+  select.so.so-select-3(id="domain" onchange="setDomianId(value)")
+    <option style="color: #c70f11" disabled="" selected="">选择分类</option>
+  img.so.so-b-0(src="@|591.png|" id="sendSmsButton" o-tap="getVerificationCode")
   //- 确认按钮
   img.queren(src="@|queren.png|" o-tap="queding")
 </template>
 <script>
 module.exports = {
   queding: function () {
+    // sendMessage();
     owo.go('page7//scaleDown/scaleUpDown')
+  },
+  "getVerificationCode": function getVerificationCode() {
+    getCode(document.querySelector('#tel').value, document.querySelector('#sendSmsButton'));
   }
 }
 </script>
 <style lang="less">
 .so-0 {
   left: 75px;
-  top: 493px;
+  top: 567px;
   width: 580px;
   height: 65px;
   z-index: 3;
@@ -48,7 +97,7 @@ module.exports = {
 }
 .so-1 {
   left: 75px;
-  top: 946px;
+  top: 966px;
   width: 580px;
   height: 60px;
   z-index: 2;
@@ -60,7 +109,7 @@ module.exports = {
 }
 .so-2 {
   left: 75px;
-  top: 1015px;
+  top: 1034px;
   width: 580px;
   height: 60px;
   z-index: 1;
@@ -72,7 +121,7 @@ module.exports = {
 }
 .so-3 {
   left: 75px;
-  top: 1084px;
+  top: 1107px;
   width: 345px;
   height: 60px;
   z-index: 0;
@@ -84,25 +133,27 @@ module.exports = {
 }
 .so-t-0 {
   left: 75px;
-  top: 567px;
+  top: 640px;
   width: 580px;
   height: 175px;
   z-index: 1;
   background-repeat: no-repeat;
   border: none;
-  font-size: 20px;
+  font-size: 26px;
+  line-height: 35px;
   padding: 10px;
   background-image: url('@|579.png|');
 }
 .so-t-1 {
   left: 75px;
-  top: 822px;
+  top: 843px;
   width: 580px;
   height: 95px;
   z-index: 0;
   background-repeat: no-repeat;
   border: none;
-  font-size: 20px;
+  font-size: 26px;
+  line-height: 35px;
   padding: 10px;
   background-image: url('@|581.png|');
 }
@@ -157,9 +208,26 @@ module.exports = {
   border: none;
   background-image: url('@|select.png|');
 }
+.so-select-3 {
+  left: 75px;
+  top: 493px;
+  width: 600px;
+  height: 65px;
+  z-index: 0;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 27px;
+  padding: 0 10px;
+  background: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-image: url('@|select.png|');
+}
 .so-b-0 {
   left: 454px;
-  top: 1084px;
+  top: 1107px;
   z-index: 0;
 }
 .queren {

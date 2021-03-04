@@ -83,7 +83,7 @@ module.exports = {
     document.querySelector('.page4 .people-text').src = editData[activeIndex][2]
     document.querySelector('.page5 .so-1').src = editData[activeIndex][3]
     // console.log()
-    owo.go('page4//scaleDown/scaleUpDown')
+    owo.go('page4//scaleDown/scaleUpDown/true')
   }
 }
 </script>

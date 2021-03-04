@@ -2,29 +2,67 @@
 .page5
   .so.so-0
     img.so.so-1(src="@|686.png|")
-    img.so.so-2(src="@|503.png|")
-    img.so.so-3(src="@|497.png|" go="page6//scaleDown/scaleUpDown")
+    //- img.so.so-2(src="@|503.png|")
+    img.so.so-3(src="@|497.png|" go="page6//scaleDown/scaleUpDown/true")
     img.so.so-4(src="@|488.png|")
-    img.so.so-5(src="@|479.png|" go="page4//scaleDown/scaleUpDown")
-    canvas#canvas(width="626" height="1300")
+    img.so.so-5(src="@|479.png|" go="page3//scaleDown/scaleUpDown/true")
+    canvas#canvas(width="626" height="1200")
     img.show(src="")
+    .dianzan-num 
 </template>
 <script>
+var cityName = '河北'
 module.exports = {
   show: function () {
     setTimeout(() => {
       // 绘制canvas
       var canvas = oCanvas.create({
+        background: "#f9ddb5",
         canvas: "#canvas"
       });
       console.log(this.query('.so-1').src)
+      this.query('.dianzan-num').innerHTML = `我是第${dianzan}位为${cityName}点赞的网友<br>一起来为家乡发展鼓劲儿吧！`
       canvas.addChild(canvas.display.image({
         x: 0,
         y: 0,
         width: 626,
         height: 1094,
         // origin: { x: "center", y: "center" },
-        image: '@|686.png|'
+        image: this.query('.so-1').src
+      }))
+      let textLen = `我是第${dianzan}位为${cityName}点赞的网友`
+      let leftX = 108
+      if (textLen.length > 15) {
+        leftX = 100
+      }
+      if (textLen.length > 16) {
+        leftX = 93
+      }
+      if (textLen.length > 17) {
+        leftX = 86
+      }
+      if (textLen.length > 18) {
+        leftX = 80
+      }
+      canvas.addChild(canvas.display.text({
+        x: leftX,
+        y: 1110,
+        width: 626,
+        align: 'center',
+        font: "bold 30px sans-serif",
+        // origin: { x: "center", y: "top" },
+        text: textLen,
+        fill: "#60482b"
+      }))
+      canvas.addChild(canvas.display.text({
+        x: 135,
+        y: 1160,
+        width: 450,
+        align: 'center',
+        font: "bold 30px sans-serif",
+        // origin: { x: "center", y: "top" },
+        text: `一起来为家乡发展鼓劲儿吧！`,
+        fill: "#60482b"
       }))
       setTimeout(() => {
         document.querySelector('.show').src = canvas.canvasElement.toDataURL("image/png")
@@ -46,7 +84,7 @@ module.exports = {
   z-index: 0;;
 }
 .so-1 {
-  top: 160px;
+  top: 135px;
   z-index: 2;
   width: 540px;
   left: 0;
@@ -55,7 +93,7 @@ module.exports = {
   height: 943px;
 }
 .so-2 {
-  left: 85px;
+  left: 52px;
   top: 1132px;
   z-index: -2;
 }
@@ -77,6 +115,26 @@ module.exports = {
 canvas {
   display: none;
   width: 626px;
-  height: 1300px;
+  height: 1200px;
+}
+.show {
+  // display: none;
+  // pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  opacity: 0;
+}
+.dianzan-num {
+  color: #60482b;
+  font-size: 34px;
+  position: absolute;
+  top: 1099px;
+  left: 46px;
+  display: block;
+  width: 540px;
+  text-align: center;
+  font-weight: bold;
 }
 </style>
