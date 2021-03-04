@@ -72,9 +72,17 @@
       }
     }
 
-    .youshou {
-      animation: xiezuoAni 1.6s 1 1s linear;
+    .youshou-ani {
+      animation: xiezuoAni 1.6s 1 0s linear;
       animation-fill-mode: forwards;
+    }
+    .zhi {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 155px;
+      z-index: -2;
     }
   </style>
 </head>
@@ -94,7 +102,7 @@
     <div class="page-1 page" template="page1" style="display: none;">
       <div class="so so-0">
         <img class="so so-1" src="./static/resource/363.png">
-        <img class="so so-2 bi" src="./static/resource/748.png">
+        <img class="so so-2" src="./static/resource/748.png">
         <img class="so so-3" src="./static/resource/82.png">
         <img class="so so-4" src="./static/resource/210.png">
       </div>
@@ -106,6 +114,7 @@
         <img class="so so-2" src="./static/resource/194.png">
         <img class="xiezuo" src="./static/resource/xiezuo.png">
         <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+        <img class="zhi" src="./static/resource/zhi.png">
         <img class="youshou" src="./static/resource/shou.png">
       </div>
     </div>
@@ -313,11 +322,16 @@
       "page2": {
         "show": function show() {
           // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          owo.animate('fadeInUp', this.query('.so-1'), 2600);
-          owo.animate('fadeIn', this.query('.xiezuo'), 1600);
+          owo.animate('fadeInUp', this.query('.zhi'), 800);
+          owo.animate('fadeInUp', this.query('.so-1'), 1500);
+          owo.animate('fadeInUp', this.query('.youshou'), 1500);
+          owo.animate('fadeIn', this.query('.xiezuo'), 2900);
+          setTimeout(() => {
+            this.query('.youshou').classList.add('youshou-ani')
+          }, 2600);
           setTimeout(function() {
             owo.go('page3//fade/moveFromRight/true');
-          }, 5000);
+          }, 6000);
         }
       },
       "page3": {
